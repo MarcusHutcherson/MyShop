@@ -31,7 +31,7 @@ namespace MyShop.DataAccess.InMemory
 
         public void Insert(Product p)
         {
-
+            products.Add(p);
         }
 
         public void Update(Product product)
