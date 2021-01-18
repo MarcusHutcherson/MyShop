@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using MyShop.Core.Contracts;
 using MyShop.Core.Models;
 using MyShop.Core.ViewModels;
-using MyShop.DataAccess.InMemory;
 
 namespace MyShop.WebUI.Controllers
 {
@@ -67,7 +64,7 @@ namespace MyShop.WebUI.Controllers
                 viewModel.Product = product;
                 viewModel.ProductCategories = productCategories.Collection();
 
-                return View(product);
+                return View(viewModel);
             }
         }
 
@@ -86,7 +83,7 @@ namespace MyShop.WebUI.Controllers
                     return View(product);
                 }
 
-                productToEdit.Catagory = product.Catagory;
+                productToEdit.Category = product.Category;
                 productToEdit.Description = product.Description;
                 productToEdit.Image = product.Image;
                 productToEdit.Name = product.Name;

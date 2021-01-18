@@ -56,8 +56,13 @@
     <Compile Include="Migrations\202101171732036_Initial.designer.cs">
       <DependentUpon>202101171732036_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101180006598_ModifyProduct.cs" />
+    <Compile Include="Migrations\202101180006598_ModifyProduct.designer.cs">
+      <DependentUpon>202101180006598_ModifyProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -72,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101171732036_Initial.resx">
       <DependentUpon>202101171732036_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101180006598_ModifyProduct.resx">
+      <DependentUpon>202101180006598_ModifyProduct.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
